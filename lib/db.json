@@ -1,22 +1,264 @@
 {
-  "books": [
-    {
-      "reviews": [
-        { "content": "i liked it", "rating": 4 },
-        { "rating": "3", "content": "great" },
-        { "rating": "1", "content": "hated it" },
-        { "rating": "10", "content": "srofgu" }
-      ],
-      "id": 1,
-      "title": "Good Book about Javascript"
+  "moviePrices" : {
+    "standard":"£12",
+    "student":"£8",
+    "children": "£4",
+    "NHS": "4"
+  },
+  "movieSeating": {
+    "rows": 16,
+    "seats": 25
+  },
+
+  "movies": [
+  {
+    "id": 1,
+    "title": "Jurassic Park",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["London Leicester Square","London Waterloo","Brighton", "Bristol", "Leeds", "Liverpool", "Manchester", "Glasgow", "Sheffield"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 1,
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "The Invisible Man",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["Brighton", "Bristol", "Leeds", "Liverpool", "Manchester", "Glasgow", "Sheffield"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 2,
+    "seating": {
+      "rows": 16,
+      "seats": 25
     },
-    {
-      "title": "Book about Ruby",
-      "reviews": [{ "rating": "3", "content": "hello" }],
-      "id": 2
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Never Rarely Sometimes Always",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["Bristol", "Liverpool", "Manchester"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 3,
+    "seating": {
+      "rows": 16,
+      "seats": 25
     },
-    { "title": "Book about Ruby", "reviews": [], "id": 4 },
-    { "title": "Book about Ruby", "reviews": [], "id": 5 },
-    { "title": "Book about Ruby", "reviews": [], "id": 6 }
-  ]
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gretel & Hansel",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["Brighton", "Bristol", "Leeds", "Liverpool", "Manchester", "Glasgow", "Sheffield"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 4,
+    "seating": {
+      "rows": 16,
+      "seats": 25
+    },
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "No time to die",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["Bristol", "Liverpool", "Manchester"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 5,
+    "seating": {
+      "rows": 16,
+      "seats": 25
+    },
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Bloodshot",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["Bristol", "Liverpool", "Manchester"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 6,
+    "seating": {
+      "rows": 16,
+      "seats": 25
+    },
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Onward",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["Bristol", "Liverpool", "Manchester"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 7,
+    "seating": {
+      "rows": 16,
+      "seats": 25
+    },
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Sonic",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["Bristol", "Liverpool", "Manchester"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 8,
+    "seating": {
+      "rows": 16,
+      "seats": 25
+    },
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Spider - Man: No way home",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["London Leicester Square","London Waterloo","Brighton", "Bristol", "Leeds", "Liverpool", "Manchester", "Glasgow", "Sheffield"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 9,
+    "seating": {
+      "rows": 16,
+      "seats": 25
+    },
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "The Matrix Resurrection",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["London Leicester Square","London Waterloo","Brighton", "Bristol", "Leeds", "Liverpool", "Manchester", "Glasgow", "Sheffield"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 10,
+    "seating": {
+      "rows": 16,
+      "seats": 25
+    },
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "The King's Man",
+    "ageRating": "12",
+    "duration": 120,
+    "locations": ["London Leicester Square","London Waterloo","Brighton", "Bristol", "Leeds", "Liverpool", "Manchester", "Glasgow", "Sheffield"],
+    "times": ["12:00", "14:20", "16:40", "19:00", "21:20"],
+    "screen": 11,
+    "seating": {
+      "rows": 16,
+      "seats": 25
+    },
+    "ticketsSold": [
+      {
+        "time": "14:20",
+        "seat": "B20"
+      },
+      {
+        "time": "14:20",
+        "seat": "B21"
+      }
+    ]
+  }
+]
 }
