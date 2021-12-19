@@ -2,7 +2,6 @@ const readlineSync = require('readline-sync');
 const API = require('./lib/API');
 
 function displayMovies(){}
-function displayLocations(){}
 function chooseAMovieProperty(movieProperty){}
 
 
@@ -12,6 +11,8 @@ function displayCinemaProperties(cinemaProperty) {
     console.log(`${index + 1}. ${elementProperty}`);
   });
 }
+
+function displayLocationsForMovieSelected(){}
 
 function mainMenu() {
   console.log("----------------");
@@ -31,7 +32,8 @@ function mainMenu() {
     // get all books
     const movies = API.read("movies");
     displayCinemaProperties(movies.map(element => element.title));
-    
+    choice;
+
     // return to main menu
     mainMenu();
   } else if (choice === "2") {
