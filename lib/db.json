@@ -1,9 +1,9 @@
 {
   "moviePrices" : {
-    "standard":"£12",
-    "student":"£8",
-    "children": "£4",
-    "NHS": "4"
+    "standard": 12,
+    "student": 8,
+    "children": 4,
+    "NHS": 4
   },
   "movieSeating": {
     "rows": 16,
