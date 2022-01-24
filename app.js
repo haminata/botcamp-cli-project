@@ -22,14 +22,19 @@ function mainMenu() {
   //** Based on selected locations get list of movies
   //** Pass movies into chooser and store choice
   //** Based on the movie selected get times pass into choose and get choice
-  // Ask user for number of tickets
-  // list of tickets types
-  // Use number of tickets to pass into getmultichoice
-  // get list of seats
-  // Using the number of tickets pass into multichoice to get seats as grid
+  //** Ask user for number of tickets
+  //** list of tickets types
+  //** Use number of tickets to pass into getmultichoice
+  //** get list of seats
+  //** Using the number of tickets pass into multichoice to get seats as grid
   // Calculate the total and return
   //
 
+
+  /*
+   * Create a new variable(movieLocations) stores each movie locations checks if a location is already
+   * included then goes to the next avoiding repeating locations
+   */
   const movieLocations = [];
   for (const movie of movies) {
     movie.locations.forEach((location) => {
@@ -39,6 +44,7 @@ function mainMenu() {
       }
     })
   }
+
 
  const selectedLocationIndex =  getChoice(movieLocations, "movie location");
   const selectedLocation = movieLocations[selectedLocationIndex];
@@ -81,6 +87,12 @@ function mainMenu() {
   })
 
   const selectedPriceIndexes = getMultiChoice(numberOfTickets, moviePricesLabels);
+  const ticketTotal = selectedPriceIndexes.reduce((totalSoFar, currentPriceIndex) => {
+      const [_, priceNumber] = moviePricesList[currentPriceIndex];
+      return totalSoFar + priceNumber;
+  }, 0)
+
+
 
   const seats = [];
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -92,6 +104,7 @@ function mainMenu() {
         }
     }
     const selectedSeats = getMultiChoice(numberOfTickets, seats, movieSeating.rows);
+    console.log(`\nTotal amount: £${ticketTotal}`);
 }
 
 mainMenu();

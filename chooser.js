@@ -14,9 +14,8 @@ function getChoice(choices, label, maxColWidth = null){
             for (let i = 0; i <= choices.length; i++) {
 
                 if(i > 0 && i % maxColWidth === 0){
-                    //console.log(currentRow.join("   "));
-                    tbl.push(currentRow);
 
+                    tbl.push(currentRow);
                     currentRow = [];
                 }
                 currentRow.push(`${i + 1}. ${choices[i]}`);
